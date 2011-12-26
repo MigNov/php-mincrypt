@@ -1,0 +1,13 @@
+ php-mincrypt authors
+ ====================
+
+php-mincrypt is the PHP bindings for mincrypt library that implements the mincrypt
+crypto-algorithm.
+
+The algorithm was both written and implemented by:
+
+	Michal Novotny <mignov@gmail.com>
+
+If you want to contribute to the algorithm feel free to post patches to
+the address/maintainer address written above and you'll be listed as one
+of the authors as well.

@@ -1,0 +1,31 @@
+ php-mincrypt README
+ ===================
+
+This package contains the PHP bindings for minCrypt crypto-algorithm
+implementation.
+
+If you want to create the RPM packages for application the ./autobuild.sh
+script will create it for you.
+
+The algorithm has been implemented in C language with requirements
+for math library (libm) and it's distributed under the LGPLv2+ licence.
+
+Terminology
+-----------
+
+This library should be referred to as php-mincrypt.
+
+Pre-requisite software
+----------------------
+
+Where versions are noted below these are the versions tested to definitely
+work. For some of them you may be able to run with earlier releases, so
+please report any success to the mailing lists
+
+ libmincrypt
+
+Copyright /  License
+--------------------
+
+All the application code is covered under the LGPLv2+ licence. For more
+information please see the LICENSE file.
