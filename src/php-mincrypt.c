@@ -136,11 +136,16 @@ static int next_id(int reset)
 	Since version:		0.0.4
 	Description:		Function gets the version of mincrypt library
 	Arguments:		None
-	Returns:		library version encoded as long
+	Returns:		library version array of major, minor and micro
 */
 PHP_FUNCTION(mincrypt_get_version)
 {
-	RETURN_LONG( mincrypt_get_version() );
+	long ver = mincrypt_get_version();
+
+        array_init(return_value);
+        add_assoc_long(return_value, "major", (long)((ver >> 16) & 0xFF));
+        add_assoc_long(return_value, "minor", (long)((ver >> 8 & 0xFF)));
+        add_assoc_long(return_value, "micro", (long)(ver & 0xFF));
 }
 
 /*
