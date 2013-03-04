@@ -19,7 +19,7 @@
 
 ZEND_DECLARE_MODULE_GLOBALS(mincrypt)
 
-static function_entry mincrypt_functions[] = {
+static zend_function_entry mincrypt_functions[] = {
 	PHP_FE(mincrypt_get_version,NULL)
 	PHP_FE(mincrypt_set_password,NULL)
 	PHP_FE(mincrypt_set_encoding_type,NULL)
